@@ -51,11 +51,12 @@
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
-    height: 45vh;
-    width: 480px;
+    height: 100%;
+    /* width: 480px; */
+    object-fit: contain;
     border-radius: 70px 0px;
-    margin-left: 5px;
-    margin-right: 5px;
+    margin-left: 10px;
+    margin-right: 10px;
   }
   * > #heading {
     padding: 1.3rem;
