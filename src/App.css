@@ -1,6 +1,7 @@
 #page {
   display: flex;
   flex-direction: column;
+  min-height: 100vh;
   /* background-image: linear-gradient(#a1c4fd, #c2e9fb); */
   background: linear-gradient(
     -45deg,
@@ -11,7 +12,7 @@
     #23d5ab
   );
   background-size: 400% 400%;
-  animation: gradient 20s ease infinite;
+  animation: gradient 15s ease infinite;
 }
 
 @keyframes gradient {
@@ -45,21 +46,24 @@
   * > #page {
     display: flex;
     flex-direction: column;
+    box-sizing: border-box;
+    width: 100%;
   }
 
   * > .box {
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
-    height: 100%;
-    /* width: 480px; */
-    object-fit: contain;
+    box-sizing: border-box;
+    width: 93%;
+    /* object-fit: contain; */
     border-radius: 70px 0px;
-    margin-left: 10px;
-    margin-right: 10px;
+    scroll-margin-left: 10px;
+    scroll-margin-right: 10px;
   }
   * > #heading {
     padding: 1.3rem;
     margin-top: 0;
+    font-size: 2.5rem;
   }
 }
